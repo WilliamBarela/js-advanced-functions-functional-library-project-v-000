@@ -42,8 +42,12 @@ const fi = (function() {
     
     
 
-    functions: function() {
-
+    functions: function(collection, f) {
+      for(const item of collection){
+        if(f(item)){
+          return item;
+        }
+      }
     },
 
 
