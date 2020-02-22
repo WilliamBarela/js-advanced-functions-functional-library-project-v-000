@@ -44,7 +44,7 @@ const fi = (function() {
 
     functions: function(collection, f) {
       for(const item of collection){
-        if(f(item)){
+        if(f(item) === true){
           return item;
         }
       }
