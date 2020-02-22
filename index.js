@@ -41,10 +41,12 @@ const fi = (function() {
     },
     
     find: function(collections, f){
-      
-    }
+      for(const item of collections){
+        
+      }
+    },
 
-    functions: function(collections, f) {
+    functions: function(){
     },
 
 
