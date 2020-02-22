@@ -59,6 +59,16 @@ const fi = (function() {
       
       return matches;
     },
+    
+    size: function(collection){
+      collection = (collection instanceof Array) ? collection : Object.keys(collection);
+      let size = 0;
+      
+      for(const item of collection){
+        size += 1;
+      }
+      return size;
+    },
 
     functions: function(){
     },
