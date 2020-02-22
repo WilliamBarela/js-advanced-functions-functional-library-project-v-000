@@ -72,10 +72,10 @@ const fi = (function() {
     },
     
     first: function(array, n){
-      let i = 0;
+      let i = 1;
       const first = [];
       
-      while(i + 1 < n){
+      while(i < n){
         first.push(array[i]);
       }
       
