@@ -47,6 +47,18 @@ const fi = (function() {
         }
       }
     },
+    
+    filter: function(collection, f){
+      matches = [];
+      
+      for(const item of collections){
+        if(f(item)){
+          matches.push(item);
+        }
+      }
+      
+      return matches;
+    },
 
     functions: function(){
     },
