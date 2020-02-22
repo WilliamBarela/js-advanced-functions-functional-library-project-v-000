@@ -40,14 +40,11 @@ const fi = (function() {
       return acc;
     },
     
-    
+    find: function(collections, f){
+      
+    }
 
-    functions: function(collection, f) {
-      for(const item of collection){
-        if(f(item) === true){
-          return item;
-        }
-      }
+    functions: function() {
     },
 
 
