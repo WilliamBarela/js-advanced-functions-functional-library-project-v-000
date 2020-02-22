@@ -64,10 +64,15 @@ const fi = (function() {
       collection = (collection instanceof Array) ? collection : Object.keys(collection);
       let size = 0;
       
+      // avoiding size = collection.length() to show implementation
       for(const item of collection){
         size += 1;
       }
       return size;
+    },
+    
+    first: function(array, n){
+      
     },
 
     functions: function(){
