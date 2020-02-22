@@ -42,7 +42,9 @@ const fi = (function() {
     
     find: function(collections, f){
       for(const item of collections){
-        
+        if(f(item)){
+          return item;
+        }
       }
     },
 
