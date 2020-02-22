@@ -51,7 +51,7 @@ const fi = (function() {
     filter: function(collection, f){
       const matches = [];
       
-      for(const item of collections){
+      for(const item of collection){
         if(f(item)){
           matches.push(item);
         }
