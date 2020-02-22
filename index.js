@@ -44,7 +44,7 @@ const fi = (function() {
       
     }
 
-    functions: function() {
+    functions: function(collections, f) {
     },
 
 
